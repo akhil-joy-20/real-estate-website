@@ -1,0 +1,301 @@
+:root {
+  --primary-color: #f69314;
+  --secondary-color: #212529;
+  --color1: #fff;
+  --color2: green;
+  --desc-color: gray;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.how-it-works,
+.property-heading,
+.agents-heading,
+.about-heading,
+.services-heading,
+.contact-us-heading {
+  font-size: 2.5rem;
+  padding-top: 3.4rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 4.2rem;
+}
+
+.working,
+#services,
+.card,
+#contact-us form,
+.address {
+  background-color: rgb(252, 248, 248);
+}
+
+#properties .btn,
+#about .btn,
+#contact-us .btn {
+  padding: 1rem 3rem;
+  background-color: var(--primary-color);
+  color: var(--color1);
+  border-color: var(--primary-color);
+  border-radius: 30px;
+}
+#properties .btn:hover,
+#about .btn:hover,
+#contact-us .btn:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--color1);
+}
+.learn-more,
+.phone-email {
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.learn-more:hover,
+.phone-email:hover {
+  text-decoration: none;
+  color: #b8641f;
+}
+
+/* ******************************* title ************************************* */
+
+#title {
+  background-image: linear-gradient(rgba(5, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/body-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--color1);
+}
+
+/* navbar */
+.navbar-brand {
+  margin: 0.5rem;
+  margin-left: 4.3rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-nav {
+  margin-right: 3rem;
+}
+.nav-item {
+  padding: 0.8rem;
+  font-weight: 600;
+}
+
+#title hr {
+  background-color: var(--desc-color);
+}
+
+/* title area */
+.title-area h1 {
+  margin: auto;
+  margin-top: 10.2rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+  padding-bottom: 1rem;
+  font-family: "Playfair Display", serif;
+}
+.title-area p {
+  margin: auto;
+  width: 38%;
+  padding-bottom: 5rem;
+  font-weight: 700;
+}
+
+/* title button */
+#title .btn {
+  margin-bottom: 10.2rem;
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  box-shadow: var(--color2);
+  border: 0.2rem solid;
+}
+#title .btn:hover {
+  border-color: var(--color1);
+}
+
+/* ****************************** how it works **************************** */
+
+.working {
+  padding-bottom: 1.3rem;
+}
+.working .fas {
+  margin-top: 1.5rem;
+  color: var(--primary-color);
+  padding-bottom: 1.5rem;
+}
+.working h3 {
+  padding-bottom: 0.8rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.working p {
+  color: var(--desc-color);
+  padding-bottom: 3rem;
+}
+
+/* ********************************** properties ***************************** */
+
+#properties {
+  padding-bottom: 4rem;
+}
+.carousel img {
+  height: 43rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: var(--color2);
+  font-weight: 700;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: var(--color2);
+  font-weight: 700;
+}
+.carousel-item h5,
+.carousel-item p {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: var(--color1);
+}
+.property-desc {
+  text-align: justify;
+  margin-top: 15%;
+  color: var(--desc-color);
+}
+.view-all {
+  margin-top: 5rem;
+}
+
+/* ********************************** agents ***************************** */
+
+#agents {
+  margin-bottom: 4.2rem;
+}
+.agents-desc {
+  color: var(--desc-color);
+  margin-bottom: 3.6rem;
+}
+.card {
+  margin-left: 0.8rem;
+}
+
+/* ******************************** about ******************************* */
+#about {
+  margin-bottom: 4.2rem;
+}
+.about-desc-1 {
+  color: var(--desc-color);
+  font-size: 1.5rem;
+}
+.about-desc-2 {
+  color: var(--desc-color);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.fa-check {
+  color: lightgreen;
+  margin-right: 1.2rem;
+}
+#about li {
+  list-style-type: none;
+  margin-bottom: 0.7rem;
+}
+#about ul {
+  margin-bottom: 3.4rem;
+}
+
+/* ******************************** services ************************** */
+
+#services .card {
+  border: none;
+}
+#services .fas {
+  margin-top: 2rem;
+  color: var(--primary-color);
+}
+
+/* ****************************** contact us ************************** */
+
+#contact-us {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+#contact-us form {
+  padding: 3rem;
+}
+.form-heading {
+  margin-bottom: 2rem;
+}
+.form-rounded {
+  border-radius: 1rem;
+}
+
+.address {
+  padding: 3rem;
+}
+.phone-email {
+  font-size: 1rem;
+}
+
+/* **************************** footer ******************************* */
+
+#footer {
+  background-color: #737373;
+  padding: 2rem;
+  padding-bottom: 0.5rem;
+}
+#footer .fab {
+  color: var(--color1);
+  margin: 1rem;
+  cursor: pointer;
+}
+#footer .fab:hover {
+  transform: translateY(-5px);
+}
+#footer hr {
+  background-color: rgb(211, 199, 199);
+  height: 1%;
+}
+#footer h4 {
+  color: var(--color1);
+  font-size: 1rem;
+}
+
+/* ********************************* media queries ***************************** */
+
+@media screen and (max-width: 1013px) {
+  .title-area p {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #contact-us form,
+  .address {
+    background-color: var(--color1);
+  }
+}
